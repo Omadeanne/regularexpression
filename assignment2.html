@@ -1,0 +1,39 @@
+<script>
+    // Regexp golf ,car and cat
+// let pattern = /ca(r|t)/
+// let output = pattern.test("car cat")
+let output = /ca(r|t)/.test("car cat")
+console.log(output)
+
+
+// pop and prop
+// let pattern2 = /(p|pr)op/
+// let output2 = pattern2.test("pop prop")
+let output2 = /pop|prop/.test("pop prop")
+console.log(output2)
+
+// ferret, ferry, ferrari
+let pattern3 = /ferr(et|y|ari)/
+let output3 = pattern3.test("ferret, ferry, ferrari")
+console.log(output3)
+
+//any word ending in ious
+let pattern4 = /\b\w+ious/
+let output4 = pattern4.test("Capricious")
+console.log(output4)
+
+// a white space character
+let pattern5 = /\s[.,;:]/
+let output5 = pattern5.test(" .,;:")
+console.log(output5)
+
+//any word longer than 6 letters
+let pattern6 = /\w[6,]/
+let output6 = pattern6.test("khadijat")
+console.log(output6)
+
+//any word without e
+let pattern7 = /\b[^eE\s]+\b/
+let output7 = pattern7.test("chump")
+console.log(output7)
+</script>
